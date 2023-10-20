@@ -40,10 +40,10 @@ export const App = () => {
       <h2>Statistics</h2>
       {countTotalFeedback() === 0 && (
         <p>There is no feedback</p>
-      )};
+      )}
       {countTotalFeedback() !== 0 && (
         <Statistics good={good} neutral={neutral} bad={bad} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage}></Statistics>
-      )};
+      )}
     </div>
-  );
+  )
 };
